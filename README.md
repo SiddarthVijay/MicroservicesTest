@@ -53,5 +53,6 @@ sudo docker run --publish 5000:5000 flask-test-docker
 ### Running React app
 ```
 cd test-react-app
-npm start
+sudo docker build --tag react-test-docker .
+sudo docker run --publish 5000:5000 react-test-docker
 ```
